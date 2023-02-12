@@ -18,9 +18,8 @@ body {
     min-height: 100vh;
     background-color: $Pale-blue;
     background-image: url("/img/pattern-background-mobile.svg");
-    background-position: top center, 50%, 50% !important;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     font-family: "Red Hat Display", sans-serif;
     display: flex;
     justify-content: center;
