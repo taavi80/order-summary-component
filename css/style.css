@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("/img/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -375px right -400px;
+  background-color: hsl(225deg, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .comp {
+  max-width: 375px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+body .comp header .hero_img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 0.6rem;
+}
+body .comp main {
+  padding: 1.6rem;
+}
+body .comp main h1 {
+  font-weight: 900;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+body .comp main .main_p {
+  max-width: 290px;
+  margin: 0 auto;
+  color: hsl(224deg, 23%, 55%);
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+body .comp main .annual_plan_container {
+  background-color: hsl(225deg, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem;
+  border-radius: 15px;
+  margin-bottom: 1.6rem;
+}
+body .comp main .annual_plan_container .left_side {
+  display: flex;
+  align-items: center;
+}
+body .comp main .annual_plan_container .left_side .music_icon {
+  margin-right: 1.3rem;
+}
+body .comp main .annual_plan_container .left_side .plan {
+  line-height: 1.5rem;
+}
+body .comp main .annual_plan_container .left_side .plan h4 {
+  font-weight: 900;
+  font-size: 1rem;
+}
+body .comp main .annual_plan_container .left_side .plan .price {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 1rem;
+}
+body .comp main .annual_plan_container a {
+  color: hsl(245deg, 75%, 52%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-underline-offset: 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+body .comp main .annual_plan_container a:hover {
+  text-decoration: none;
+  color: hsl(245deg, 70%, 64%);
+}
+body .comp main .proceed {
+  display: block;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: hsl(245deg, 75%, 52%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.16rem;
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 12px 12px 1px rgba(49, 49, 225, 0.2);
+  margin-bottom: 1.6rem;
+}
+body .comp main .proceed:hover {
+  background-color: hsl(245deg, 67%, 58%);
+}
+body .comp main .cancel_order {
+  border: 0;
+  background-color: white;
+  color: hsl(224deg, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.16rem;
+  font-weight: 900;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+body .comp main .cancel_order:hover {
+  color: initial;
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+  body {
+    background-image: url("/img/pattern-background-desktop.svg");
+    background-position: top -290px right -400px;
+  }
+  body .comp {
+    max-width: 590px;
+  }
+  body .comp main {
+    padding: 2.3rem;
+  }
+  body .comp main .main_p {
+    max-width: 350px;
+    font-size: 0.95rem;
+  }
+}/*# sourceMappingURL=style.css.map */

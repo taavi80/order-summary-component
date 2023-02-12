@@ -1,0 +1,166 @@
+
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+$Bright-blue2: hsl(245, 70%, 64%);
+
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("/img/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -375px right -400px;
+    background-color: $Pale-blue;
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .comp {
+        max-width: 375px;
+        background-color: white;
+        border-radius: 15px;
+        text-align: center;
+        
+        header {
+
+            .hero_img {
+                width: 100%;
+                display: block;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                margin-bottom: 0.6rem;
+            }
+        }
+        
+        main {
+            padding: 1.6rem;
+            
+            h1 {
+                font-weight: 900;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+            
+            .main_p {
+                max-width: 290px;
+                margin: 0 auto;
+                color: $Desaturated-blue;
+                font-size: 1.1rem;
+                line-height: 1.6rem;
+                margin-bottom: 1.6rem;
+            }
+            
+            .annual_plan_container {
+                background-color: $Very-pale-blue;
+                display: flex;
+                justify-content: space-between;
+                
+                padding: 1.3rem;
+                border-radius: 15px;
+                margin-bottom: 1.6rem;
+                
+                .left_side {
+                    display: flex;
+                    align-items: center;
+                    
+                    .music_icon {
+                        margin-right: 1.3rem;
+                    }
+                    
+                    .plan {
+                        line-height: 1.5rem;
+            
+                        h4 {
+                            font-weight: 900;
+                            font-size: 1rem;
+                        }
+            
+                        .price {
+                            color: $Desaturated-blue;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            
+                a {
+                    color: $Bright-blue;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    text-underline-offset: 2px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+                a:hover{
+                    text-decoration: none;
+                    color: $Bright-blue2;
+                }
+            }
+            
+            .proceed {
+                display: block;
+                border-radius: 15px;
+                padding: 1rem;
+                background-color: $Bright-blue;
+                font-family: "Red Hat Display", sans-serif;
+                font-size: 1.16rem;
+                color: white;
+                text-decoration: none;
+                box-shadow: 2px 12px 12px 1px rgba(49, 49, 225, 0.2);
+                margin-bottom: 1.6rem;
+            }
+            
+            .proceed:hover {
+                background-color: hsl(245, 67%, 58%);
+            }
+            
+            .cancel_order {
+                border: 0;
+                background-color: white;
+                color: $Desaturated-blue;
+                font-family: "Red Hat Display", sans-serif;
+                font-size: 1.16rem;
+                font-weight: 900;
+                margin-bottom: 0.6rem;
+                cursor: pointer;
+            }
+            
+            .cancel_order:hover {
+                color: initial;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    html{
+        font-size: 18px;
+    }
+
+    body{
+        background-image: url("/img/pattern-background-desktop.svg");
+        background-position: top -290px right -400px;
+
+        .comp{
+            max-width: 590px;
+
+            main{
+                padding: 2.3rem;
+                .main_p {
+                        max-width: 350px;
+                        font-size: .95rem;
+                }
+            }
+        }
+    }
+}

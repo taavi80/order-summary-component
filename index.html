@@ -13,157 +13,32 @@
       rel="stylesheet"
     />
 
-    <style>
-      :root {
-        --Pale-blue: hsl(225, 100%, 94%);
-        --Bright-blue: hsl(245, 75%, 52%);
-
-        --Very-pale-blue: hsl(225, 100%, 98%);
-        --Desaturated-blue: hsl(224, 23%, 55%);
-        --Dark-blue: hsl(223, 47%, 23%);
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        min-height: 100vh;
-        background-image: url("/img/pattern-background-mobile.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top -375px left;
-        background-color: var(--Pale-blue);
-        font-family: "Red Hat Display", sans-serif;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .comp {
-        max-width: 375px;
-        background-color: white;
-        border-radius: 15px;
-        text-align: center;
-      }
-      main {
-        padding: 1.6rem;
-      }
-      .heroImg {
-        width: 100%;
-        display: block;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        margin-bottom: 0.6rem;
-      }
-      h1 {
-        font-weight: 900;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-      p {
-        font-size: 16px;
-      }
-      .main-p {
-        max-width: 297px;
-        margin: 0 auto;
-        color: var(--Desaturated-blue);
-        font-size: 0.9rem;
-        line-height: 1.6rem;
-        margin-bottom: 1.6rem;
-      }
-      .annual-plan-container {
-        background-color: var(--Very-pale-blue);
-        display: flex;
-        justify-content: space-between;
-
-        padding: 1.3rem;
-        border-radius: 15px;
-      }
-      .annual-plan-container .left {
-        display: flex;
-        align-items: center;
-      }
-      .annual-plan-container .left .music-icon {
-        margin-right: 1.3rem;
-      }
-      .annual-plan-container .left .plan {
-        line-height: 1.5rem;
-      }
-      .annual-plan-container .left .plan h4 {
-        font-weight: 900;
-        font-size: 1rem;
-      }
-      .annual-plan-container .left .plan .price {
-        color: var(--Desaturated-blue);
-        font-size: 1rem;
-      }
-      .annual-plan-container a {
-        color: var(--Bright-blue);
-        font-size: 0.9rem;
-        font-weight: 700;
-        text-underline-offset: 2px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-      .annual-plan-container {
-        margin-bottom: 1.6rem;
-      }
-      .proceed {
-        display: block;
-        border-radius: 15px;
-        padding: 1rem;
-        background-color: var(--Bright-blue);
-        font-family: "Red Hat Display", sans-serif;
-        font-size: 1.16rem;
-        color: white;
-        text-decoration: none;
-        box-shadow: 2px 12px 12px 1px rgba(49, 49, 225, 0.2);
-        margin-bottom: 1.6rem;
-      }
-      .proceed:hover {
-        background-color: hsl(245, 67%, 58%);
-      }
-      .cancel-order {
-        border: 0;
-        background-color: white;
-        color: var(--Desaturated-blue);
-        font-family: "Red Hat Display", sans-serif;
-        font-size: 1.16rem;
-        font-weight: 900;
-        margin-bottom: 0.6rem;
-        cursor: pointer;
-      }
-      .cancel-order:hover {
-        color: initial;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="comp">
       <header>
-        <img class="heroImg" src="img/illustration-hero.svg" alt="" />
+        <img class="hero_img" src="img/illustration-hero.svg" alt="" />
       </header>
       <main>
         <h1>Order Summary</h1>
-        <p class="main-p">
+        <p class="main_p">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
-        <div class="annual-plan-container">
-          <div class="left">
-            <img class="music-icon" src="img/icon-music.svg" alt="" />
+        <div class="annual_plan_container">
+          <div class="left_side">
+            <img class="music_icon" src="img/icon-music.svg" alt="" />
             <div class="plan">
               <h4>Annual Plan</h4>
               <p class="price">$59.99/year</p>
             </div>
           </div>
-          <a href="#">Change</a>
+          <a href="#" title="choose a new plan">Change</a>
         </div>
 
         <a href="#" class="proceed">Proceed to Payment</a>
-        <button class="cancel-order" href="#">Cancel Order</button>
+        <button class="cancel_order" href="#">Cancel Order</button>
       </main>
     </div>
   </body>
