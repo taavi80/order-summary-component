@@ -7,7 +7,7 @@
 body {
   min-height: 100vh;
   background-color: hsl(225deg, 100%, 94%);
-  background-image: url("/img/pattern-background-mobile.svg");
+  background-image: url("img/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   font-family: "Red Hat Display", sans-serif;
@@ -117,7 +117,7 @@ body .component main .cancel_order:hover {
     font-size: 18px;
   }
   body {
-    background-image: url("/img/pattern-background-desktop.svg");
+    background-image: url("img/pattern-background-desktop.svg");
   }
   body .component {
     max-width: 590px;

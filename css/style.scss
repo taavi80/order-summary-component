@@ -17,7 +17,7 @@ $Dark-blue: hsl(223, 47%, 23%);
 body {
     min-height: 100vh;
     background-color: $Pale-blue;
-    background-image: url("/img/pattern-background-mobile.svg");
+    background-image: url("img/pattern-background-mobile.svg");
     background-repeat: no-repeat;
     background-size: contain;
     font-family: "Red Hat Display", sans-serif;
@@ -148,7 +148,7 @@ body {
     }
 
     body{
-        background-image: url("/img/pattern-background-desktop.svg");
+        background-image: url("img/pattern-background-desktop.svg");
         
         .component{
             max-width: 590px;
