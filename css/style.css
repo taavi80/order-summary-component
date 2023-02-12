@@ -21,7 +21,7 @@ body .component {
   background-color: white;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 2px 12px 22px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 12px 22px 1px rgba(49, 49, 225, 0.2);
 }
 body .component header .hero_img {
   width: 100%;
