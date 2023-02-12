@@ -26,11 +26,12 @@ body {
     justify-content: center;
     align-items: center;
     
-    .comp {
+    .component {
         max-width: 375px;
         background-color: white;
         border-radius: 15px;
         text-align: center;
+        box-shadow: 2px 12px 22px 1px rgba(0, 0, 0, 0.2);
         
         header {
 
@@ -151,7 +152,7 @@ body {
         background-image: url("/img/pattern-background-desktop.svg");
         background-position: top -290px right -400px;
 
-        .comp{
+        .component{
             max-width: 590px;
 
             main{
